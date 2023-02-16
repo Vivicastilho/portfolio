@@ -22,7 +22,7 @@ export const MobileButton = styled.button`
   ::before {
     content: '';
     display: block;
-    width: 32px;
+    width: 18px;
     height: 2px;
     background: currentColor;
     border-radius: 2px;

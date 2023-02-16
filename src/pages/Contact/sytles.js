@@ -31,11 +31,25 @@ export const Header = styled.div`
   color: white;
   padding: 30px 0 30px 40px;
 
+  @media (max-width: 1000px) {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+  }
+
   @media (max-width: 600px) {
     padding: 20px;
     display: flex;
     flex-direction: column;
     font-size: 20px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
   }
 `;
 
@@ -74,6 +88,18 @@ export const Form = styled.form`
     color: #e74c3c;
   }
 
+  @media (max-width: 1200px) {
+    input,
+    textarea {
+      display: flex;
+      width: 500px;
+      padding: 15px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
   @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
@@ -85,6 +111,16 @@ export const Form = styled.form`
     textarea {
       display: flex;
       width: 350px;
+      padding: 15px;
+      align-items: center;
+      resize: none;
+    }
+  }
+  @media (max-width: 400px) {
+    input,
+    textarea {
+      display: flex;
+      width: 250px;
       padding: 15px;
       align-items: center;
       resize: none;

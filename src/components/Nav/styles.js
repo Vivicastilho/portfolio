@@ -4,7 +4,7 @@ import portfolio from '../../assets/ViPortifolio.png';
 export const NavBar = styled.nav`
   grid-area: nav;
   width: 260px;
-  height: 100%;
+  height: 100vh;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   display: grid;
   grid-template-rows: 260px auto 110px;
@@ -50,16 +50,20 @@ export const Links = styled.ul`
   grid-area: links;
 
   li {
-    border-top: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
+    color: ${({ theme }) => theme.COLORS.GRAY_FONT};
     display: flex;
     align-items: center;
     padding: 15px;
     padding-left: 50px;
     gap: 10px;
     list-style: none;
-    :last-child {
-      border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
-    }
+  }
+
+  a {
+    border-top: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
+  }
+  a:last-child {
+    border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
   }
 `;
 
@@ -82,6 +86,10 @@ export const Footer = styled.footer`
 
   p {
     margin: 30px auto 0;
+    display: flex;
+  }
+  .rights {
+    margin-bottom: 20px;
   }
   grid-area: footer;
 `;

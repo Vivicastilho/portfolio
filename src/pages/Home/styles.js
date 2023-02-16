@@ -18,7 +18,7 @@ export const Content = styled.div`
   grid-template-rows: 1fr 1fr 1fr;
   color: white;
   width: 100%;
-  height: 950px;
+  height: 100vh;
   background-image: url(${background});
   background-size: cover;
   background-position: center center;
@@ -28,6 +28,14 @@ export const Content = styled.div`
     align-self: center;
     margin: 0 auto;
   }
+
+  @media (max-width: 1000px) {
+    background-image: url(${background});
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+  }
+
   @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
@@ -48,7 +56,7 @@ export const Title = styled.div`
   gap: 10px;
   align-items: center;
   justify-content: start;
-  margin: 100px auto 0;
+  margin: 60px auto 0;
   color: black;
   h1 {
     font-family: 'Poppins', sans-serif;

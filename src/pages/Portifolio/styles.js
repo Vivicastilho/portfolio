@@ -33,7 +33,7 @@ export const Header = styled.header`
 `;
 
 export const MyWork = styled.div`
-  margin-top: 60px;
+  margin-top: 30px;
   align-self: center;
   justify-self: center;
   grid-area: content;

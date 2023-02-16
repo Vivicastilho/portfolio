@@ -6,7 +6,6 @@ export const Dropdown = styled.div`
   position: absolute;
   top: 40px;
   right: 40px;
-  cursor: pointer;
 
   @media (max-width: 600px) {
     top: 18px;
@@ -53,6 +52,7 @@ export const Lable = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'content button';
   background-color: ${({ theme }) => theme.COLORS.GRAY_FONT};
+  cursor: pointer;
 `;
 
 export const ActiveFlag = styled.div`
