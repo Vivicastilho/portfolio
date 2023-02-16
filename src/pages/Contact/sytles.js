@@ -105,10 +105,12 @@ export const Footer = styled.footer`
   font-size: 20px;
 
   @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
     margin-top: 30px;
   }
 `;

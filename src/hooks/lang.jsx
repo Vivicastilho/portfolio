@@ -7,7 +7,7 @@ export const useMedia = (media) => {
   numb = +numb.join('');
   const size = numb < window.innerWidth ? false : true;
   const [match, setMatch] = useState(size);
-  console.log(size);
+
   useEffect(() => {
     function changeMatch() {
       const { matches } = window.matchMedia(media);
