@@ -7,13 +7,18 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 260px auto;
   grid-template-areas: 'nav content';
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 export const Content = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   color: white;
   width: 100%;
-  height: 100vh;
+  height: 950px;
   background-image: url(${background});
   background-size: cover;
   background-position: center center;
@@ -22,6 +27,17 @@ export const Content = styled.div`
     height: fit-content;
     align-self: center;
     margin: 0 auto;
+  }
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: #ccc;
+    height: 1000px;
+
+    > Button {
+      margin: 20px auto;
+    }
   }
 `;
 
@@ -42,7 +58,6 @@ export const Title = styled.div`
 
   p,
   > div {
-    display: inline-block;
     width: fit-content;
     font-weight: 400;
     font-size: 30px;
@@ -50,6 +65,27 @@ export const Title = styled.div`
   }
   p {
     margin-left: 120px;
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+
+    h1 {
+      font-size: 30px;
+      align-items: center;
+    }
+
+    p,
+    > div {
+      display: flex;
+      flex-wrap: nowrap;
+      font-size: 20px;
+      margin: 0;
+    }
   }
 `;
 
@@ -96,6 +132,32 @@ export const Knowledge = styled.div`
       margin-top: 10px;
       width: 30px;
       height: 30px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    p {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 25px;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    li {
+      font-size: 16px;
+      margin-bottom: 20px;
     }
   }
 `;

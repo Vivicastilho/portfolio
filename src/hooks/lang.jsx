@@ -1,6 +1,25 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 
 export const LangContext = createContext({});
+
+export const useMedia = (media) => {
+  let numb = media.match(/\d/g);
+  numb = +numb.join('');
+  const size = numb < window.innerWidth ? false : true;
+  const [match, setMatch] = useState(size);
+  console.log(size);
+  useEffect(() => {
+    function changeMatch() {
+      const { matches } = window.matchMedia(media);
+      setMatch(matches);
+    }
+    window.addEventListener('resize', changeMatch);
+    return () => {
+      window.removeEventListener('resize', changeMatch);
+    };
+  }, [media]);
+  return match;
+};
 
 export const LangText = (mode) => ({
   ...(mode === 'pt'

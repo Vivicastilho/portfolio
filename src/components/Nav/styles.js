@@ -1,17 +1,17 @@
-import styled from "styled-components";
-import portfolio from "../../assets/ViPortifolio.png";
+import styled from 'styled-components';
+import portfolio from '../../assets/ViPortifolio.png';
 
 export const NavBar = styled.nav`
   grid-area: nav;
   width: 260px;
-  height: 100vh;
+  height: 100%;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
   display: grid;
   grid-template-rows: 260px auto 110px;
   grid-template-areas:
-    "foto"
-    "links"
-    "footer";
+    'foto'
+    'links'
+    'footer';
 
   .active:visited {
     color: white;

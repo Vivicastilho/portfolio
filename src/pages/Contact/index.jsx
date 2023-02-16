@@ -4,11 +4,16 @@ import { Nav } from '../../components/Nav';
 import { Container, Footer, Form, Header } from './sytles';
 import { useForm } from 'react-hook-form';
 
-import { useLang, LangText } from '../../hooks/lang.jsx';
+import { NavMobile } from '../../components/NavMobile';
+
+import { useLang, LangText, useMedia } from '../../hooks/lang.jsx';
 
 export function Contact() {
   const { lang } = useLang();
   const langText = LangText(lang);
+
+  const mobile = useMedia('(max-width: 600px)');
+
   const {
     register,
     trigger,
@@ -25,7 +30,7 @@ export function Contact() {
   return (
     <Container id="contact">
       <DropDownMenu />
-      <Nav />
+      {mobile ? <NavMobile /> : <Nav />}
       <Header>
         <h1>{langText.SendMessage}.</h1>
       </Header>

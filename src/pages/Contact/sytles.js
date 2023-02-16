@@ -12,6 +12,13 @@ export const Container = styled.div`
   .contactButton {
     margin-top: 75px;
   }
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    .contactButton {
+      margin-top: 30px;
+    }
+  }
 `;
 
 export const Header = styled.div`
@@ -23,6 +30,13 @@ export const Header = styled.div`
   font-family: 'Poppins', sans-serif;
   color: white;
   padding: 30px 0 30px 40px;
+
+  @media (max-width: 600px) {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
 `;
 
 export const Form = styled.form`
@@ -33,9 +47,9 @@ export const Form = styled.form`
   margin: 120px auto 0;
   display: flex;
   flex-direction: column;
-  width: 800px;
-  height: 435px;
+
   gap: 10px;
+
   label {
     display: flex;
     flex-direction: column;
@@ -59,6 +73,23 @@ export const Form = styled.form`
   .error {
     color: #e74c3c;
   }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px auto 0;
+    width: 100%;
+
+    input,
+    textarea {
+      display: flex;
+      width: 350px;
+      padding: 15px;
+      align-items: center;
+      resize: none;
+    }
+  }
 `;
 
 export const Footer = styled.footer`
@@ -72,4 +103,12 @@ export const Footer = styled.footer`
   font-family: Roboto;
   font-style: Regular;
   font-size: 20px;
+
+  @media (max-width: 600px) {
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+  }
 `;

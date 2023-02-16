@@ -12,13 +12,16 @@ import CvP from '../../assets/CVPortugues.pdf';
 import { Nav } from '../../components/Nav';
 import { Button } from '../../components/Button';
 import { DropDownMenu } from '../../components/DropDownMenu';
+import { NavMobile } from '../../components/NavMobile';
 
-import { useLang, LangText } from '../../hooks/lang.jsx';
+import { useLang, LangText, useMedia } from '../../hooks/lang.jsx';
 import Typewriter from 'typewriter-effect';
 
 export function Home() {
   const { lang } = useLang();
   const langText = LangText(lang);
+
+  const mobile = useMedia('(max-width: 600px)');
 
   function handleCv() {
     lang === 'pt' ? window.open(CvP) : window.open(CvE);
@@ -26,7 +29,7 @@ export function Home() {
 
   return (
     <Container>
-      <Nav />
+      {mobile ? <NavMobile /> : <Nav />}
       <Content>
         <DropDownMenu />
         <Title>
