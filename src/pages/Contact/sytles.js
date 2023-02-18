@@ -23,19 +23,30 @@ export const Container = styled.div`
 
 export const Header = styled.div`
   grid-area: header;
-  font-size: 32px;
+  font-size: 28px;
   width: 100%;
   height: fit-content;
   border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
   font-family: 'Poppins', sans-serif;
   color: white;
-  padding: 30px 0 30px 40px;
+  padding: 20px 0 20px 20px;
+
+  p {
+    font-size: 16px;
+    font-weight: lighter;
+  }
 
   @media (max-width: 1000px) {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 26px;
+  }
+
+  @media (min-width: 600px) {
+    p {
+      display: none;
+    }
   }
 
   @media (max-width: 600px) {
@@ -46,10 +57,10 @@ export const Header = styled.div`
   }
 
   @media (max-width: 400px) {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    font-size: 25px;
+    font-size: 14px;
   }
 `;
 
@@ -58,7 +69,7 @@ export const Form = styled.form`
   align-items: center;
   width: 800px;
   height: 435px;
-  margin: 120px auto 0;
+  margin: 80px auto 0;
   display: flex;
   flex-direction: column;
 
@@ -89,6 +100,12 @@ export const Form = styled.form`
   }
 
   @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px auto 0;
+    width: 100%;
+
     input,
     textarea {
       display: flex;

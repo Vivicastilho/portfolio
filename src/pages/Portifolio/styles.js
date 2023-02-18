@@ -17,13 +17,29 @@ export const Container = styled.div`
 
 export const Header = styled.header`
   grid-area: header;
-  font-size: 32px;
+  font-size: 28px;
   width: 100%;
   height: fit-content;
   border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
   font-family: 'Poppins', sans-serif;
   color: white;
-  padding: 30px 0 30px 40px;
+  padding: 20px 0 20px 20px;
+
+  p {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  @media (max-width: 1400px) {
+    padding: 20px 0 10px 20px;
+    font-size: 28px;
+  }
+
+  @media (min-width: 600px) {
+    p {
+      display: none;
+    }
+  }
 
   @media (max-width: 600px) {
     display: flex;
@@ -33,7 +49,7 @@ export const Header = styled.header`
 `;
 
 export const MyWork = styled.div`
-  margin-top: 30px;
+  margin-top: 10px;
   align-self: center;
   justify-self: center;
   grid-area: content;
@@ -50,6 +66,29 @@ export const MyWork = styled.div`
     background-color: white;
   }
 
+  @media (max-width: 1400px) {
+    margin-top: 0;
+    align-self: center;
+    justify-self: center;
+    grid-area: content;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    overflow-y: auto;
+
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 200px;
+      height: 200px;
+      background-color: white;
+    }
+  }
+
   @media (max-width: 600px) {
     font-size: 25px;
     width: 100%;
@@ -58,6 +97,9 @@ export const MyWork = styled.div`
     gap: 20px;
     align-items: center;
     justify-content: center;
+    width: 100%;
+
+    padding: 40px;
 
     div {
       display: flex;

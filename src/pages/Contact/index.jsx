@@ -33,6 +33,7 @@ export function Contact() {
       {mobile ? <NavMobile /> : <Nav />}
       <Header>
         <h1>{langText.SendMessage}.</h1>
+        <p>Viviane Castilho</p>
       </Header>
       <Form
         target="_blank"

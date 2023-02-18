@@ -7,8 +7,20 @@ export const Dropdown = styled.div`
   top: 40px;
   right: 40px;
 
+  @media (max-width: 1100px) {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+  }
+
+  @media (max-width: 900px) {
+    top: 18px;
+    right: 40px;
+  }
+
   @media (max-width: 600px) {
     top: 18px;
+    right: 18px;
   }
 `;
 

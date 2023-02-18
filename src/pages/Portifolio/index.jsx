@@ -16,6 +16,7 @@ export function Portifolio() {
       {mobile ? <NavMobile /> : <Nav />}
       <Header>
         <h1>{langText.Portifolio}</h1>
+        <p>Viviane Castilho</p>
       </Header>
       <MyWork>
         <div></div>

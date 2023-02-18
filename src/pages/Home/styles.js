@@ -34,6 +34,9 @@ export const Content = styled.div`
     background-size: cover;
     background-position: center center;
     width: 100%;
+    > Button {
+      margin: 10px auto;
+    }
   }
 
   @media (max-width: 600px) {
@@ -56,7 +59,7 @@ export const Title = styled.div`
   gap: 10px;
   align-items: center;
   justify-content: start;
-  margin: 60px auto 0;
+  margin: 20px auto 0;
   color: black;
   h1 {
     font-family: 'Poppins', sans-serif;
@@ -69,10 +72,38 @@ export const Title = styled.div`
     width: fit-content;
     font-weight: 400;
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   p {
     margin-left: 120px;
+  }
+
+  @media (max-width: 1100px) {
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      width: 500px;
+    }
+
+    p {
+      margin-left: 15px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    p,
+    > div {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      text-align: center;
+      font-size: 30px;
+      align-items: center;
+    }
   }
 
   @media (max-width: 600px) {
@@ -103,7 +134,7 @@ export const Knowledge = styled.div`
   flex-direction: column;
   padding: 50px;
   width: 790px;
-  height: 560px;
+  height: 500px;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.5);
 
@@ -120,7 +151,7 @@ export const Knowledge = styled.div`
   h1 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 20px;
   }
   ul {
     margin-top: 40px;
@@ -140,6 +171,45 @@ export const Knowledge = styled.div`
       margin-top: 10px;
       width: 30px;
       height: 30px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    margin: 20px auto 0;
+    flex-direction: column;
+    padding: 25px;
+    width: 80%;
+    height: 400px;
+    p {
+      font-size: 16px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 25px;
+    }
+    ul {
+      margin-top: 10px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    li {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    li img {
+      display: none;
+    }
+    p {
+      font-size: 16px;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
     }
   }
 
