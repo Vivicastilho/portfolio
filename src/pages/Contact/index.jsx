@@ -12,7 +12,7 @@ export function Contact() {
   const { lang } = useLang();
   const langText = LangText(lang);
 
-  const mobile = useMedia('(max-width: 600px)');
+  const mobile = useMedia('(max-width: 860px)');
 
   const {
     register,

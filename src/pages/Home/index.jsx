@@ -21,7 +21,7 @@ export function Home() {
   const { lang } = useLang();
   const langText = LangText(lang);
 
-  const mobile = useMedia('(max-width: 600px)');
+  const mobile = useMedia('(max-width: 860px)');
 
   function handleCv() {
     lang === 'pt' ? window.open(CvP) : window.open(CvE);

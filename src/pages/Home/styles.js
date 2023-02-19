@@ -8,7 +8,7 @@ export const Container = styled.div`
   grid-template-columns: 260px auto;
   grid-template-areas: 'nav content';
 
-  @media (max-width: 600px) {
+  @media (max-width: 860px) {
     display: flex;
     flex-direction: column;
   }
@@ -36,10 +36,11 @@ export const Content = styled.div`
     width: 100%;
     > Button {
       margin: 5px auto;
+      padding: 18px 40px;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 860px) {
     display: flex;
     flex-direction: column;
     background-image: none;
@@ -78,7 +79,7 @@ export const Title = styled.div`
     margin-left: 120px;
   }
 
-  @media (max-height: 800px) {
+  @media (max-height: 860px) {
     p,
     > div {
       display: none;
@@ -114,7 +115,7 @@ export const Title = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 860px) {
     display: flex;
     width: 300px;
     flex-wrap: wrap;
@@ -122,7 +123,7 @@ export const Title = styled.div`
     margin-top: 40px;
 
     h1 {
-      font-size: 30px;
+      font-size: 32px;
       align-items: center;
     }
 
@@ -130,7 +131,7 @@ export const Title = styled.div`
     > div {
       display: flex;
       flex-wrap: nowrap;
-      font-size: 20px;
+      font-size: 25px;
       margin: 0;
     }
   }
@@ -182,10 +183,6 @@ export const Knowledge = styled.div`
     }
   }
 
-  @media (max-height: 800px) {
-    margin-top: 0;
-  }
-
   @media (max-width: 1100px) {
     margin: 10px auto 0;
     flex-direction: column;
@@ -225,17 +222,17 @@ export const Knowledge = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 860px) {
     display: flex;
     font-size: 16px;
-    margin-top: 20px;
+    margin: 40px;
     padding: 20px;
-    width: 100%;
+    width: auto;
     height: auto;
     p {
       display: flex;
       flex-wrap: wrap;
-      font-size: 16px;
+      font-size: 18px;
     }
     h1 {
       font-size: 25px;
@@ -248,6 +245,9 @@ export const Knowledge = styled.div`
     li {
       font-size: 16px;
       margin-bottom: 20px;
+    }
+    li img {
+      display: flex;
     }
   }
 `;

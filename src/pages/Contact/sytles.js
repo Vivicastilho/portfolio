@@ -12,9 +12,10 @@ export const Container = styled.div`
   .contactButton {
     margin-top: 75px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 860px) {
     display: flex;
     flex-direction: column;
+    height: 100vh;
     .contactButton {
       margin-top: 30px;
     }
@@ -43,13 +44,13 @@ export const Header = styled.div`
     font-size: 26px;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 860px) {
     p {
       display: none;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 860px) {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -117,7 +118,7 @@ export const Form = styled.form`
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 860px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +128,7 @@ export const Form = styled.form`
     input,
     textarea {
       display: flex;
-      width: 350px;
+      width: 400px;
       padding: 15px;
       align-items: center;
       resize: none;
@@ -157,7 +158,7 @@ export const Footer = styled.footer`
   font-style: Regular;
   font-size: 20px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 860px) {
     display: flex;
     flex-direction: column;
     font-size: 16px;
