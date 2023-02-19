@@ -66,6 +66,16 @@ export const MyWork = styled.div`
     background-color: white;
   }
 
+  @media (max-height: 800px) {
+    margin-top: 20px;
+    width: 1000px;
+    height: 550px;
+    > div {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
   @media (max-width: 1400px) {
     margin-top: 0;
     align-self: center;
@@ -88,10 +98,22 @@ export const MyWork = styled.div`
       background-color: white;
     }
   }
+  @media (max-width: 700px) {
+    font-size: 25px;
+    width: 100%;
+    height: 100vh;
+    margin: 20px auto;
+    overflow-y: auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 
   @media (max-width: 600px) {
     font-size: 25px;
     width: 100%;
+    height: 100vh;
     margin: 40px auto;
     overflow-y: auto;
     gap: 20px;

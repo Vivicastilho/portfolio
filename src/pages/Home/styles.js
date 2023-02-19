@@ -29,13 +29,13 @@ export const Content = styled.div`
     margin: 0 auto;
   }
 
-  @media (max-width: 1000px) {
+  @media (min-width: 1000px) {
     background-image: url(${background});
     background-size: cover;
     background-position: center center;
     width: 100%;
     > Button {
-      margin: 10px auto;
+      margin: 5px auto;
     }
   }
 
@@ -78,10 +78,18 @@ export const Title = styled.div`
     margin-left: 120px;
   }
 
+  @media (max-height: 800px) {
+    p,
+    > div {
+      display: none;
+    }
+  }
+
   @media (max-width: 1100px) {
     align-content: flex-start;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 
     h1 {
       font-size: 40px;
@@ -174,23 +182,27 @@ export const Knowledge = styled.div`
     }
   }
 
+  @media (max-height: 800px) {
+    margin-top: 0;
+  }
+
   @media (max-width: 1100px) {
-    margin: 20px auto 0;
+    margin: 10px auto 0;
     flex-direction: column;
     padding: 25px;
     width: 80%;
-    height: 400px;
+    height: 380px;
     p {
       font-size: 16px;
     }
     h1 {
       text-align: center;
-      font-size: 25px;
+      font-size: 20px;
     }
     ul {
-      margin-top: 10px;
+      margin-top: 5px;
       display: flex;
-      gap: 20px;
+      gap: 15px;
       justify-content: center;
     }
 

@@ -11,9 +11,14 @@ export const Container = styled.button`
   border: 1px solid rgba(105, 105, 105, 1);
   background-color: #2c2d2f;
   border-radius: 5px;
+  cursor: pointer;
 
   @media (max-width: 1100px) {
-    padding: 10px 30px;
+    padding: 20px 40px;
     font-size: 18px;
+  }
+  @media (min-width: 900px) {
+    padding: 10px 20px;
+    font-size: 16px;
   }
 `;

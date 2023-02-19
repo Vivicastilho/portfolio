@@ -32,7 +32,7 @@ export const Header = styled.div`
   padding: 20px 0 20px 20px;
 
   p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: lighter;
   }
 

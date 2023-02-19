@@ -85,11 +85,9 @@ export const Footer = styled.footer`
   }
 
   p {
-    margin: 30px auto 0;
+    margin: 10px auto 0;
     display: flex;
   }
-  .rights {
-    margin-bottom: 20px;
-  }
+
   grid-area: footer;
 `;
