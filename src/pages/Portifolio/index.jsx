@@ -12,9 +12,9 @@ export function Portifolio() {
 
   return (
     <Container>
-      <DropDownMenu />
       {mobile ? <NavMobile /> : <Nav />}
       <Header>
+        <DropDownMenu />
         <h1>{langText.Portifolio}</h1>
         <p>Viviane Castilho</p>
       </Header>

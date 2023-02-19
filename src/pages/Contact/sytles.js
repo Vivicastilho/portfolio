@@ -16,6 +16,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     height: 100vh;
+
     .contactButton {
       margin-top: 30px;
     }
@@ -53,6 +54,7 @@ export const Header = styled.div`
   @media (max-width: 860px) {
     padding: 20px;
     display: flex;
+
     flex-direction: column;
     font-size: 20px;
   }

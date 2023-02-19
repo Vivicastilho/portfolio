@@ -29,9 +29,9 @@ export function Contact() {
 
   return (
     <Container id="contact">
-      <DropDownMenu />
       {mobile ? <NavMobile /> : <Nav />}
       <Header>
+        <DropDownMenu />
         <h1>{langText.SendMessage}.</h1>
         <p>Viviane Castilho</p>
       </Header>

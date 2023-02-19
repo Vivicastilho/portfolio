@@ -18,7 +18,8 @@ export const Dropdown = styled.div`
     right: 40px;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 860px) {
+    position: absolute;
     top: 18px;
     right: 18px;
   }

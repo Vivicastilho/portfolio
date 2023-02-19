@@ -75,6 +75,9 @@ export const LinkMobile = styled.div`
     flex-direction: column;
     gap: 10px;
   }
+  ul a:link {
+    color: ${({ theme }) => theme.COLORS.GRAY_FONT};
+  }
   a:hover {
     background-color: #ccc;
     align-items: center;
@@ -83,6 +86,5 @@ export const LinkMobile = styled.div`
   }
   ul a:visited {
     color: ${({ theme }) => theme.COLORS.WHITE_FONT};
-    text-decoration-color: black;
   }
 `;
