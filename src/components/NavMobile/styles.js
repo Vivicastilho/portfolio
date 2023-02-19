@@ -76,7 +76,7 @@ export const LinkMobile = styled.div`
     gap: 10px;
   }
   ul a:link {
-    color: ${({ theme }) => theme.COLORS.BACKGROUND};
+    color: ${({ theme }) => theme.COLORS.WHITE_FONT};
   }
   a:hover {
     background-color: #ccc;
