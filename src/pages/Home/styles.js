@@ -263,6 +263,8 @@ export const Knowledge = styled.div`
     li {
       font-size: 16px;
       margin-bottom: 10px;
+      color: ${({ theme }) => theme.COLORS.BACKGROUND};
+      font-weight: 500;
     }
   }
 `;
