@@ -73,7 +73,7 @@ export const Title = styled.div`
     width: fit-content;
     font-weight: 400;
     font-size: 30px;
-    margin-top: 5px;
+    margin-top: 0;
   }
   p {
     margin-left: 120px;

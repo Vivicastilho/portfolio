@@ -40,6 +40,13 @@ export const LangText = (mode) => ({
         Developer: 'Web Developer',
         Designer: 'Web Designer',
         IAm: 'Eu sou',
+        ErrorName: 'Este campo é necessário',
+        ErrorNameLength: 'Máximo de 100 caracteres',
+        ErrorFieldEmail: 'Este campo é necessário',
+        ErrorEmail: 'E-mail inválido',
+        ErrorFieldMessage: 'Este campo é necessário',
+        ErrorMessage: 'Máximo de 200 caracteres',
+        FooterCountry: 'Caldas Novas - Goiás/Brasil',
       }
     : {
         Home1:
@@ -58,6 +65,13 @@ export const LangText = (mode) => ({
         Developer: 'Web Developer',
         Designer: 'Web Designer',
         IAm: 'I am a',
+        ErrorName: 'This field is required',
+        ErrorNameLength: 'Max lenght is 100 char',
+        ErrorFieldEmail: 'This field is required',
+        ErrorEmail: 'Invalid email address',
+        ErrorFieldMessage: 'This field is required',
+        ErrorMessage: 'Max lenght is 200 char',
+        FooterCountry: 'Caldas Novas - Goiás/Brazil',
       }),
 });
 

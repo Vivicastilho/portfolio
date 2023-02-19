@@ -52,8 +52,8 @@ export function Contact() {
           />
           {errors.name && (
             <p className="error">
-              {errors.name.type === 'required' && 'This field is required'}
-              {errors.name.type === 'maxLength' && 'Max lenght is 100 char'}
+              {errors.name.type === 'required' && langText.ErrorName}
+              {errors.name.type === 'maxLength' && langText.ErrorNameLength}
             </p>
           )}
         </label>
@@ -68,8 +68,8 @@ export function Contact() {
           />
           {errors.email && (
             <p className="error">
-              {errors.email.type === 'required' && 'This field is required'}
-              {errors.email.type === 'pattern' && 'Invalid email address'}
+              {errors.email.type === 'required' && langText.ErrorFieldEmail}
+              {errors.email.type === 'pattern' && langText.ErrorEmail}
             </p>
           )}
         </label>
@@ -84,8 +84,8 @@ export function Contact() {
           />
           {errors.message && (
             <p className="error message">
-              {errors.message.type === 'required' && 'This field is required'}
-              {errors.message.type === 'maxLength' && 'Max lenght is 200 char'}
+              {errors.message.type === 'required' && langText.ErrorFieldMessage}
+              {errors.message.type === 'maxLength' && langText.ErrorMessage}
             </p>
           )}
         </label>
@@ -95,7 +95,7 @@ export function Contact() {
       </Form>
       <Footer>
         <p>vivianegomes.dev@gmail.com</p>
-        <p>Caldas Novas - Goiás/Brasil</p>
+        <p>{langText.FooterCountry}</p>
       </Footer>
     </Container>
   );
