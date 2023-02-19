@@ -250,4 +250,19 @@ export const Knowledge = styled.div`
       display: flex;
     }
   }
+
+  @media (max-width: 450px) {
+    margin: 20px;
+    padding: 10px;
+    ul {
+      gap: 10px;
+    }
+    li img {
+      display: none;
+    }
+    li {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
 `;
