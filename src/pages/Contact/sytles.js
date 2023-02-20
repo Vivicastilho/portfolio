@@ -25,13 +25,18 @@ export const Container = styled.div`
 
 export const Header = styled.div`
   grid-area: header;
-  font-size: 28px;
+  font-size: 16px;
   width: 100%;
   height: fit-content;
   border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
-  font-family: 'Poppins', sans-serif;
+
   color: white;
   padding: 20px 0 20px 20px;
+
+  h1 {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+  }
 
   p {
     font-size: 18px;
@@ -42,10 +47,18 @@ export const Header = styled.div`
     padding: 20px;
     display: flex;
     flex-direction: column;
-    font-size: 26px;
+
+    h1 {
+      font-size: 50px;
+      font-family: 'Poppins', sans-serif;
+    }
   }
 
   @media (min-width: 860px) {
+    h1 {
+      font-size: 50px;
+      font-family: 'Poppins', sans-serif;
+    }
     p {
       display: none;
     }
@@ -54,16 +67,23 @@ export const Header = styled.div`
   @media (max-width: 860px) {
     padding: 20px;
     display: flex;
-
     flex-direction: column;
-    font-size: 16px;
+
+    h1 {
+      font-size: 38px;
+      font-family: 'Poppins', sans-serif;
+    }
   }
 
   @media (max-width: 400px) {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+
+    h1 {
+      font-size: 28px;
+      font-family: 'Poppins', sans-serif;
+    }
   }
 `;
 
