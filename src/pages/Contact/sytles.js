@@ -56,7 +56,7 @@ export const Header = styled.div`
     display: flex;
 
     flex-direction: column;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   @media (max-width: 400px) {

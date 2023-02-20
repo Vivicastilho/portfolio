@@ -17,13 +17,16 @@ export const Container = styled.div`
 
 export const Header = styled.header`
   grid-area: header;
-  font-size: 28px;
   width: 100%;
   height: fit-content;
   border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
-  font-family: 'Poppins', sans-serif;
   color: white;
   padding: 20px 0 20px 20px;
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+  }
 
   p {
     font-size: 18px;
@@ -32,7 +35,12 @@ export const Header = styled.header`
 
   @media (max-width: 1400px) {
     padding: 20px 0 10px 20px;
-    font-size: 28px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    h1 {
+      font-size: 32px;
+      font-family: 'Poppins', sans-serif;
+    }
   }
 
   @media (min-width: 860px) {
@@ -44,7 +52,13 @@ export const Header = styled.header`
   @media (max-width: 860px) {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+    h1 {
+      font-size: 32px;
+      font-family: 'Poppins', sans-serif;
+    }
   }
 `;
 
