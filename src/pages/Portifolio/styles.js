@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import  Work1  from '../../assets/work1.jpg';
 
 export const Container = styled.div`
   display: grid;
@@ -77,8 +78,35 @@ export const MyWork = styled.div`
   > div {
     width: 300px;
     height: 300px;
+    background-image: white;
+    display: flex;
+    justify-content: center;
     background-color: white;
+    position: relative;
+    cursor: pointer;
+    
   }
+  
+   .foto1{
+    background-image: url(${Work1});
+    background-position: center;
+    background-size: cover;
+   } 
+  
+  div p {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+  }
+
+
 
   @media (max-width: 1400px) {
     margin-top: 0;
@@ -101,6 +129,10 @@ export const MyWork = styled.div`
       height: 200px;
       background-color: white;
     }
+
+    > div a img{
+    width: 200px;
+    height: 200px;
   }
 
   @media (max-width: 860px) {
@@ -118,6 +150,18 @@ export const MyWork = styled.div`
       flex-wrap: wrap;
       width: 150px;
       height: 150px;
+      display: flex;
+      align-items: center;
     }
+
   }
+  > div a img{
+    width: 150px;
+    height: 150px;   
+    
+  }
+  }
+  
+  
 `;
+

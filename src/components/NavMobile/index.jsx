@@ -20,7 +20,7 @@ export function NavMobile({ active = false, ...rest }) {
               <li>HOME</li>
             </NavLink>
             <NavLink to="/portifolio">
-              <li>PORTFOLIO</li>
+              <li>PORTFóLIO</li>
             </NavLink>
             <NavLink to="/contact">
               <li>CONTATO</li>

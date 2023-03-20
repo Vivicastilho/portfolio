@@ -29,10 +29,10 @@ export const LangText = (mode) => ({
         Home2:
           'Tenho alguns projetos desenvolvidos como freelancer. Sou determinada, criativa, tenho facilidade de trabalhar em equipe, sempre buscando meu crescimento pessoal e profissional, contribuindo com o meu melhor para a empresa.',
         NavHome: 'INICIO',
-        NavPortolio: 'PORTIFÓLIO',
+        NavPortolio: 'PORTFÓLIO',
         NavContact: 'CONTATO',
         Skills: 'Conhecimento',
-        Portifolio: 'Portifólio.',
+        Portifolio: 'Portfólio.',
         Name: 'Nome',
         Email: 'E-mail',
         Message: 'Mensagem',
