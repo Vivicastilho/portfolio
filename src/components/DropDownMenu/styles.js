@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Dropdown = styled.div`
   width: 60px;
@@ -6,23 +6,7 @@ export const Dropdown = styled.div`
   position: absolute;
   top: 40px;
   right: 40px;
-
-  @media (min-width: 1100px) {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-
-  @media (max-width: 900px) {
-    top: 18px;
-    right: 40px;
-  }
-
-  @media (max-width: 860px) {
-    position: absolute;
-    top: 18px;
-    right: 18px;
-  }
+  cursor: pointer;
 `;
 
 export const Button = styled.button`
@@ -63,9 +47,8 @@ export const Lable = styled.div`
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 'content button';
+  grid-template-areas: "content button";
   background-color: ${({ theme }) => theme.COLORS.GRAY_FONT};
-  cursor: pointer;
 `;
 
 export const ActiveFlag = styled.div`

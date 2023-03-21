@@ -1,5 +1,5 @@
-import { NavBar, Header, Links, Footer } from './styles';
-import { NavLink } from 'react-router-dom';
+import { NavBar, Header, Links, Footer } from "./styles";
+import { NavLink } from "react-router-dom";
 import {
   AiOutlineHome,
   AiOutlineFolderOpen,
@@ -7,8 +7,8 @@ import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
   AiOutlineGithub,
-} from 'react-icons/ai';
-import { useLang, LangText } from '../../hooks/lang.jsx';
+} from "react-icons/ai";
+import { useLang, LangText } from "../../hooks/lang.jsx";
 
 export function Nav() {
   const { lang } = useLang();
@@ -22,7 +22,7 @@ export function Nav() {
 
         <Links>
           <NavLink
-            className={(navData) => (navData.isActive ? 'active' : 'none')}
+            className={(navData) => (navData.isActive ? "active" : "none")}
             to="/"
           >
             <li>
@@ -31,7 +31,7 @@ export function Nav() {
             </li>
           </NavLink>
           <NavLink
-            className={(navData) => (navData.isActive ? 'active' : 'none')}
+            className={(navData) => (navData.isActive ? "active" : "none")}
             to="/portifolio"
           >
             <li>
@@ -40,7 +40,7 @@ export function Nav() {
             </li>
           </NavLink>
           <NavLink
-            className={(navData) => (navData.isActive ? 'active' : 'none')}
+            className={(navData) => (navData.isActive ? "active" : "none")}
             to="/contact"
           >
             <li>
@@ -68,7 +68,7 @@ export function Nav() {
             </NavLink>
           </div>
           <p>
-            2023 Made by me <br />© All Rights Reserved
+            2023 Made by me <br />@ All Rights Reserved
           </p>
         </Footer>
       </NavBar>

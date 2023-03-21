@@ -1,47 +1,39 @@
-import { Container, Content, Knowledge, Title } from './styles';
+import { Container, Content, Knowledge, Title } from "./styles";
 
-import CssIcon from '../../assets/CssIcon.png';
-import HtmlIcon from '../../assets/htmlIcon.png';
-import FigmaIcon from '../../assets/figmaIcon.png';
-import JavascripIcon from '../../assets/JavascripIcon.png';
-import GitIcon from '../../assets/GitIcon.png';
-import ReactIcon from '../../assets/React.png';
-import CvE from '../../assets/CVEnglish.pdf';
-import CvP from '../../assets/CVPortugues.pdf';
+import CssIcon from "../../assets/CssIcon.png";
+import HtmlIcon from "../../assets/htmlIcon.png";
+import FigmaIcon from "../../assets/figmaIcon.png";
+import JavascripIcon from "../../assets/JavascripIcon.png";
+import GitIcon from "../../assets/GitIcon.png";
+import ReactIcon from "../../assets/React.png";
+import Cv from "../../assets/CVenglish.pdf";
 
-import { Nav } from '../../components/Nav';
-import { Button } from '../../components/Button';
-import { DropDownMenu } from '../../components/DropDownMenu';
-import { NavMobile } from '../../components/NavMobile';
+import { Nav } from "../../components/Nav";
+import { Button } from "../../components/Button";
+import { DropDownMenu } from "../../components/DropDownMenu";
 
-import { useLang, LangText, useMedia } from '../../hooks/lang.jsx';
-import Typewriter from 'typewriter-effect';
+import { useLang, LangText } from "../../hooks/lang.jsx";
+import Typewriter from "typewriter-effect";
 
 export function Home() {
   const { lang } = useLang();
   const langText = LangText(lang);
 
-  const mobile = useMedia('(max-width: 860px)');
-
-  function handleCv() {
-    lang === 'pt' ? window.open(CvP) : window.open(CvE);
-  }
-
   return (
     <Container>
-      {mobile ? <NavMobile /> : <Nav />}
+      <Nav />
       <Content>
         <DropDownMenu />
         <Title>
           <h1>VIVIANE CASTILHO</h1>
-          <p>{langText.IAm}</p>
+          <p>I am a</p>
           <Typewriter
             onInit={(typeWriter) => {
               typeWriter
-                .typeString(langText.Developer)
+                .typeString("Web Developer")
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString(langText.Designer)
+                .typeString("Web Designer")
                 .pauseFor(2000)
                 .deleteAll()
                 .start();
@@ -83,7 +75,7 @@ export function Home() {
             </ul>
           </div>
         </Knowledge>
-        <Button title="Download CV" onClick={handleCv} />
+        <Button title="Download CV" onClick={() => window.open(Cv)} />
       </Content>
     </Container>
   );

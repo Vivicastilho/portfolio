@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import portfolio from '../../assets/ViPortifolio.png';
+import styled from "styled-components";
+import portfolio from "../../assets/ViPortifolio.png";
 
 export const NavBar = styled.nav`
   grid-area: nav;
@@ -9,9 +9,9 @@ export const NavBar = styled.nav`
   display: grid;
   grid-template-rows: 260px auto 110px;
   grid-template-areas:
-    'foto'
-    'links'
-    'footer';
+    "foto"
+    "links"
+    "footer";
 
   .active:visited {
     color: white;
@@ -50,20 +50,16 @@ export const Links = styled.ul`
   grid-area: links;
 
   li {
-    color: ${({ theme }) => theme.COLORS.GRAY_FONT};
+    border-top: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
     display: flex;
     align-items: center;
     padding: 15px;
     padding-left: 50px;
     gap: 10px;
     list-style: none;
-  }
-
-  a {
-    border-top: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
-  }
-  a:last-child {
-    border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
+    :last-child {
+      border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_FONT};
+    }
   }
 `;
 
@@ -85,9 +81,7 @@ export const Footer = styled.footer`
   }
 
   p {
-    margin: 10px auto 0;
-    display: flex;
+    margin: 30px auto 0;
   }
-
   grid-area: footer;
 `;
