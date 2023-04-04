@@ -8,14 +8,15 @@ export default createGlobalStyle`
 }
 
 body {
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+    background-color: ${({ theme }) => theme.COLORS.DARK300};
     color: ${({ theme }) => theme.COLORS.WHITE};
+    overflow-y: scroll;
     
     -webkit-font-smoothing: antialiased;
 }
 
 body, input, button, textarea{
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     outline: none;
 
@@ -33,4 +34,10 @@ botton, a{
 button:hover, a:hover{
     filter: brightness(0.9)
 }
+li{
+    list-style: none;
+}
+
+
+
 `;

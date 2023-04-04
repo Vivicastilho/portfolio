@@ -1,77 +1,54 @@
-import { NavBar, Header, Links, Footer } from "./styles";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import {
-  AiOutlineHome,
-  AiOutlineFolderOpen,
-  AiOutlineMail,
-  AiOutlineInstagram,
-  AiOutlineLinkedin,
-  AiOutlineGithub,
-} from "react-icons/ai";
-import { useLang, LangText } from "../../hooks/lang.jsx";
+import { Container, MobileNav, Navigation } from "./styles";
 
-export function Nav() {
-  const { lang } = useLang();
-  const langText = LangText(lang);
+export const Nav = () => {
+  const [bool, setBool] = useState(false);
   return (
-    <>
-      <NavBar>
-        <Header>
-          <h1>VIVIANE CASTILHO</h1>
-        </Header>
-
-        <Links>
-          <NavLink
-            className={(navData) => (navData.isActive ? "active" : "none")}
-            to="/"
-          >
-            <li>
-              <AiOutlineHome />
-              {langText.NavHome}
-            </li>
+    <Container>
+      <div>
+        <h1>VC</h1>
+      </div>
+      <Navigation>
+        <NavLink to="/">
+          <li>Início</li>
+        </NavLink>
+        <NavLink to="/sobre">
+          <li>Sobre</li>
+        </NavLink>
+        <NavLink to="/portfolio">
+          <li>Portfólio</li>
+        </NavLink>
+        <a href="mailto:vivianegomes.dev@gmail.com.br" target="_blank">
+          <li>Contato</li>
+        </a>
+      </Navigation>
+      <label>
+        <input
+          type="checkbox"
+          checked={bool ? true : false}
+          onChange={() => setBool(!bool)}
+        />
+        <span className="slider"></span>
+        <span className="labels" data-on="PT" data-off="EN"></span>
+      </label>
+      <MobileNav>
+        <span></span>
+        <div>
+          <NavLink to="/">
+            <li>Início</li>
           </NavLink>
-          <NavLink
-            className={(navData) => (navData.isActive ? "active" : "none")}
-            to="/portifolio"
-          >
-            <li>
-              <AiOutlineFolderOpen />
-              {langText.NavPortolio}
-            </li>
+          <NavLink to="/sobre">
+            <li>Sobre</li>
           </NavLink>
-          <NavLink
-            className={(navData) => (navData.isActive ? "active" : "none")}
-            to="/contact"
-          >
-            <li>
-              <AiOutlineMail />
-              {langText.NavContact}
-            </li>
+          <NavLink to="/portfolio">
+            <li>Portfólio</li>
           </NavLink>
-        </Links>
-        <Footer>
-          <div>
-            <NavLink
-              to="https://www.linkedin.com/in/viviane-gomes-castilho-93a5a6103/"
-              target="_blank"
-            >
-              <AiOutlineLinkedin />
-            </NavLink>
-            <NavLink
-              to="https://www.instagram.com/vivigcastilho/"
-              target="_blank"
-            >
-              <AiOutlineInstagram />
-            </NavLink>
-            <NavLink to="https://github.com/Vivicastilho" target="_blank">
-              <AiOutlineGithub />
-            </NavLink>
-          </div>
-          <p>
-            2023 Made by me <br />@ All Rights Reserved
-          </p>
-        </Footer>
-      </NavBar>
-    </>
+          <a href="mailto:vivianegomes.dev@gmail.com.br" target="_blank">
+            <li>Contato</li>
+          </a>
+        </div>
+      </MobileNav>
+    </Container>
   );
-}
+};

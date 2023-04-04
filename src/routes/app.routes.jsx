@@ -1,14 +1,15 @@
 import { Route, Routes } from "react-router-dom";
+
 import { Home } from "../pages/Home";
-import { Contact } from "../pages/Contact";
-import { Portifolio } from "../pages/Portifolio";
+import { About } from "../pages/About";
+import { Portfolio } from "../pages/Portfolio";
 
 export function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/portifolio" element={<Portifolio />} />
+      <Route path="/sobre" element={<About />} />
+      <Route path="/portfolio" element={<Portfolio />} />
     </Routes>
   );
 }

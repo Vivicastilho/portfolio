@@ -1,101 +1,166 @@
 import styled from "styled-components";
-import background from "../../assets/background.jpg";
+import dot from "../../assets/backgroundDot.svg";
 
 export const Container = styled.div`
-  width: 100%;
   height: 100vh;
+  width: 100%;
   display: grid;
-  grid-template-columns: 260px auto;
-  grid-template-areas: "nav content";
+  grid-template-areas: "nav" "content" "footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  @media (min-width: 750px) {
+  }
 `;
+
 export const Content = styled.div`
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  color: white;
-  width: 100%;
-  height: 100vh;
-  background-image: url(${background});
-  background-size: cover;
-  background-position: center center;
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: min(80vw, 1355px);
+  height: fit-content;
+  padding: 20px;
+  position: relative;
+  background-color: ${({ theme }) => theme.COLORS.CINZA_CLARO1};
+  margin: 50px auto;
+
   button {
-    width: fit-content;
-    height: fit-content;
-    align-self: center;
-    margin: 0 auto;
+    margin: 30px auto 40px;
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    font-family: ${({ theme }) => theme.FONTS[1]};
+    background-color: ${({ theme }) => theme.COLORS.PINK2};
+    color: ${({ theme }) => theme.COLORS.WHITE};
+    font-weight: 700;
+    border: 1px solid ${({ theme }) => theme.COLORS.PINK1};
+  }
+
+  &::after {
+    content: "";
+    width: 50px;
+    height: 140px;
+    background-image: url(${dot});
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  &::before {
+    content: "";
+    display: none;
+    width: 80px;
+    height: 238px;
+    background-image: url(${dot});
+    left: 0;
+    position: absolute;
+  }
+  @media (min-width: 750px) {
+    border-radius: 20px 0px 0px 20px;
+    padding-left: min(17vw, 270px);
+    align-items: flex-start;
+    height: 600px;
+
+    button {
+      margin-left: 0;
+    }
+
+    &::after {
+      width: 80px;
+      height: 100%;
+    }
+
+    &::before {
+      display: inline-block;
+    }
+  }
+`;
+
+export const Social = styled.div`
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: min(5.5vw, 3rem);
+  margin-top: 30px;
+
+  a,
+  a:visited {
+    color: ${({ theme }) => theme.COLORS.DARK300};
+  }
+
+  gap: 10px;
+
+  @media (min-width: 750px) {
+    display: flex;
   }
 `;
 
 export const Title = styled.div`
-  width: 600px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-  justify-content: start;
-  margin: 100px auto 0;
-  color: black;
-  h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: 60px;
-    font-weight: 600;
+  text-align: center;
+  h3,
+  h4 {
+    font-family: ${({ theme }) => theme.FONTS[1]};
+    font-weight: 500;
+  }
+  h3 {
+    font-size: clamp(1.437rem, 3vw, 4.5rem);
+    color: ${({ theme }) => theme.COLORS.DARK300};
   }
 
+  h4 {
+    font-size: clamp(1.437rem, 3vw, 2.125rem);
+  }
   p,
-  > div {
-    display: inline-block;
-    width: fit-content;
+  h5 {
+    font-family: ${({ theme }) => theme.FONTS[0]};
+  }
+
+  h5 {
+    font-weight: 700;
+    font-size: clamp(0.875rem, 3vw, 1.437rem);
+  }
+
+  p {
     font-weight: 400;
-    font-size: 30px;
-    margin-top: 10px;
-  }
-  p {
-    margin-left: 120px;
-  }
-`;
-
-export const Knowledge = styled.div`
-  display: flex;
-  margin: 40px auto 0;
-  flex-direction: column;
-  padding: 50px;
-  width: 790px;
-  height: 560px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
-
-  .sobre {
-    height: 260px;
+    margin: 20px auto 0;
+    width: clamp(200px, 30vw, 290px);
   }
 
-  p {
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: 10px;
-    line-height: 1.4;
+  img {
+    width: min(47vw, 300px);
+    height: min(47vw, 300px);
+    border-radius: 50%;
+    object-position: top;
+    object-fit: cover;
   }
-  h1 {
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    margin-top: 35px;
+
+  img,
+  h3,
+  h5 {
+    margin-top: 8px;
   }
-  ul {
-    margin-top: 40px;
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    margin-top: 35px;
-  }
-  li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 20px;
-    list-style: none;
-    > img {
-      margin-top: 10px;
-      width: 30px;
-      height: 30px;
+  @media (min-width: 750px) {
+    p,
+    h3,
+    h4,
+    h5 {
+      text-align: left;
+    }
+    p {
+      margin-top: 40px;
+
+      margin-left: 0;
+    }
+    img {
+      position: absolute;
+      left: calc(100% - 250px);
+      bottom: 25%;
+      z-index: 5;
     }
   }
 `;

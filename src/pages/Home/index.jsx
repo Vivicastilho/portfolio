@@ -1,82 +1,55 @@
-import { Container, Content, Knowledge, Title } from "./styles";
-
-import CssIcon from "../../assets/CssIcon.png";
-import HtmlIcon from "../../assets/htmlIcon.png";
-import FigmaIcon from "../../assets/figmaIcon.png";
-import JavascripIcon from "../../assets/JavascripIcon.png";
-import GitIcon from "../../assets/GitIcon.png";
-import ReactIcon from "../../assets/React.png";
-import Cv from "../../assets/CVenglish.pdf";
-
+import { useState } from "react";
+import { Footer } from "../../components/Footer";
 import { Nav } from "../../components/Nav";
-import { Button } from "../../components/Button";
-import { DropDownMenu } from "../../components/DropDownMenu";
+import { Container, Content, Social, Title } from "./styles";
+import Portfolio from "../../assets/Portfolio.png";
+import {
+  AiOutlineInstagram,
+  AiOutlineGithub,
+  AiOutlineBehanceSquare,
+  AiOutlineLinkedin,
+  AiOutlineMail,
+} from "react-icons/ai";
 
-import { useLang, LangText } from "../../hooks/lang.jsx";
-import Typewriter from "typewriter-effect";
-
-export function Home() {
-  const { lang } = useLang();
-  const langText = LangText(lang);
-
+export const Home = () => {
   return (
     <Container>
       <Nav />
       <Content>
-        <DropDownMenu />
         <Title>
-          <h1>VIVIANE CASTILHO</h1>
-          <p>I am a</p>
-          <Typewriter
-            onInit={(typeWriter) => {
-              typeWriter
-                .typeString("Web Developer")
-                .pauseFor(2000)
-                .deleteAll()
-                .typeString("Web Designer")
-                .pauseFor(2000)
-                .deleteAll()
-                .start();
-            }}
-            options={{ loop: true }}
-          />
+          <h4>Olá, eu sou</h4>
+          <h3>Viviane Castilho</h3>
+          <img src={Portfolio} alt="" />
+          <h5>UI/Ux e Web Designer</h5>
+          <p>
+            Trabalho freelancer em criação de de sites com elaboração de
+            protótipos wireframes e experiência do usuário
+          </p>
         </Title>
-        <Knowledge>
-          <p>{langText.Home1}</p>
-          <p>{langText.Home2}</p>
-
-          <h1>{langText.Skills}</h1>
-          <div>
-            <ul>
-              <li>
-                UI/UX Design
-                <img src={FigmaIcon} alt="" />
-              </li>
-              <li>
-                HTML
-                <img src={HtmlIcon} alt="" />
-              </li>
-              <li>
-                CSS
-                <img src={CssIcon} alt="" />
-              </li>
-              <li>
-                Javascript
-                <img src={JavascripIcon} alt="" />
-              </li>
-              <li>
-                ReactJs
-                <img src={ReactIcon} alt="" />
-              </li>
-              <li>
-                Git/GitHub
-                <img src={GitIcon} alt="" />
-              </li>
-            </ul>
-          </div>
-        </Knowledge>
-        <Button title="Download CV" onClick={() => window.open(Cv)} />
+        <Social>
+          <a href="https://www.behance.net/vivianecastilho" target="_blank">
+            <AiOutlineBehanceSquare />
+          </a>
+          <a href="https://www.instagram.com/vivigcastilho/" target="_blank">
+            <AiOutlineInstagram />
+          </a>
+          <a href="https://github.com/Vivicastilho" target="_blank">
+            <AiOutlineGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/viviane-castilho/"
+            target="_blank"
+          >
+            <AiOutlineLinkedin />
+          </a>
+          <a href="mailto:vivianegomes.dev@gmail.com.br" target="_blank">
+            <AiOutlineMail />
+          </a>
+        </Social>
+        <button>Download CV</button>
       </Content>
+
+      <Footer />
     </Container>
   );
-}
+};
