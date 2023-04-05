@@ -10,7 +10,7 @@ import {
   AiOutlineLinkedin,
   AiOutlineMail,
 } from "react-icons/ai";
-import CV from "../../assets/VivianeCv.pdf";
+import CV from "../../assets/vivianecv.pdf";
 
 export const Home = () => {
   return (
