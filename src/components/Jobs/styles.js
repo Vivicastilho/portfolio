@@ -12,6 +12,8 @@ export const Container = styled.div`
   }
 
   h6 {
+    color: ${({ theme }) => theme.COLORS.PINK2};
+
     font-family: ${({ theme }) => theme.FONTS[1]};
     font-size: 1.2rem;
     font-weight: 500;

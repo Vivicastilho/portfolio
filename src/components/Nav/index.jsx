@@ -6,9 +6,11 @@ export const Nav = () => {
   const [bool, setBool] = useState(false);
   return (
     <Container>
-      <div>
-        <h1>VC</h1>
-      </div>
+      <a href="/">
+        <div>
+          <h1>VC</h1>
+        </div>
+      </a>
       <Navigation>
         <NavLink to="/">
           <li>Início</li>

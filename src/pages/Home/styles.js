@@ -107,9 +107,10 @@ export const Title = styled.div`
     font-family: ${({ theme }) => theme.FONTS[1]};
     font-weight: 500;
   }
+  h5,
   h3 {
     font-size: clamp(1.437rem, 3vw, 4.5rem);
-    color: ${({ theme }) => theme.COLORS.DARK300};
+    color: ${({ theme }) => theme.COLORS.PINK2};
   }
 
   h4 {

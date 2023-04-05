@@ -21,7 +21,12 @@ body, input, button, textarea{
     outline: none;
 
 }
-
+p{
+    color: ${({ theme }) => theme.COLORS.DARK200};
+    font-family: ${({ theme }) => theme.FONTS[0]};
+    line-height: 20px;
+    letter-spacing: 0.005em;
+}
 a{
     text-decoration: none;
 }
@@ -36,6 +41,7 @@ button:hover, a:hover{
 }
 li{
     list-style: none;
+
 }
 
 

@@ -17,7 +17,7 @@ export const Container = styled.div`
   padding: 0 20px;
   width: 100%;
   margin: 0 auto;
-  > div {
+  > a {
     display: flex;
     justify-content: center;
     align-items: center;

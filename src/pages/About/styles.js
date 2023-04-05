@@ -17,6 +17,10 @@ export const Container = styled.div`
     font-family: ${({ theme }) => theme.FONTS[1]};
     font-weight: 400;
   }
+  h4,
+  h3 {
+    color: ${({ theme }) => theme.COLORS.DARK300};
+  }
 
   h4 {
     margin-top: 20px;
@@ -119,6 +123,7 @@ export const Competências = styled.div`
     }
   }
   li {
+    color: ${({ theme }) => theme.COLORS.DARK300};
     font-size: 0.875rem;
     list-style: disc;
     margin-left: 15px;

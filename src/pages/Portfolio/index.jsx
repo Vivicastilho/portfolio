@@ -18,6 +18,7 @@ export const Portfolio = () => {
           description="Criação feita com a ferramenta
         Figma para uma confeitaria 
         artesanal, web e mobile."
+          link="https://www.figma.com/file/5KFsAsoZZFPFRwkwzJzMQy/LeideCakes?node-id=0%3A1&t=QrymOJT5Hj5BOqrc-1"
         />
         <Jobs
           image={Notes}
@@ -25,6 +26,7 @@ export const Portfolio = () => {
           description="Criação feita com a ferramenta
           Figma pelo curso do Rodrigo
           Gonçalves, web."
+          link="https://www.figma.com/file/WLnXWHihUKlI5NvHsF48Qg/Simple-Notes?node-id=0%3A1&t=p85UzO1UojyYwh9H-1"
         />
       </Content>
 
