@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import dot from "../../assets/backgroundDot.svg";
+
 export const Container = styled.div`
   height: 100vh;
   width: 100%;
@@ -43,6 +44,7 @@ export const Container = styled.div`
     }
   }
 `;
+
 export const Content = styled.div`
   background-color: ${({ theme }) => theme.COLORS.CINZA_CLARO1};
   grid-area: content;

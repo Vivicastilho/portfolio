@@ -64,7 +64,7 @@ export const Content = styled.div`
   }
   @media (min-width: 1200px) {
     height: 600px;
-    margin: 0 auto;
+    margin: 180px auto;
     padding: 0;
     h1 {
       display: inline-block;

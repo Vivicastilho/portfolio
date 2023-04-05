@@ -10,6 +10,7 @@ import {
   AiOutlineLinkedin,
   AiOutlineMail,
 } from "react-icons/ai";
+import CV from "../../assets/VivianeCv.pdf";
 
 export const Home = () => {
   return (
@@ -46,7 +47,7 @@ export const Home = () => {
             <AiOutlineMail />
           </a>
         </Social>
-        <button>Download CV</button>
+        <button onClick={() => window.open(CV)}>Download CV</button>
       </Content>
 
       <Footer />
