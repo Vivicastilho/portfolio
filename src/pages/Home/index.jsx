@@ -24,8 +24,8 @@ export const Home = () => {
           <img src={Portfolio} alt="" />
           <h5>UI/Ux e Web Designer</h5>
           <p>
-            Trabalho freelancer em criação de de sites com elaboração de
-            protótipos wireframes e experiência do usuário
+            Trabalho freelancer em criação de sites com elaboração de
+            protótipos, wireframes e experiência do usuário.
           </p>
         </Title>
         <Social>

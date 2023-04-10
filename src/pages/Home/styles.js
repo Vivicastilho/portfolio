@@ -88,9 +88,17 @@ export const Social = styled.div`
   font-size: min(5.5vw, 3rem);
   margin-top: 30px;
 
+  a {
+    transition: all 0.3s;
+  }
+
   a,
   a:visited {
     color: ${({ theme }) => theme.COLORS.DARK300};
+  }
+
+  a:hover {
+    color: ${({ theme }) => theme.COLORS.PINK2};
   }
 
   gap: 10px;
@@ -114,6 +122,7 @@ export const Title = styled.div`
   }
 
   h4 {
+    color: ${({ theme }) => theme.COLORS.DARK200};
     font-size: clamp(1.437rem, 3vw, 2.125rem);
   }
   p,

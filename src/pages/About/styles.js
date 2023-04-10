@@ -18,7 +18,9 @@ export const Container = styled.div`
     font-family: ${({ theme }) => theme.FONTS[1]};
     font-weight: 400;
   }
-  h4,
+  h4 {
+    color: ${({ theme }) => theme.COLORS.PINK2};
+  }
   h3 {
     color: ${({ theme }) => theme.COLORS.DARK300};
   }
