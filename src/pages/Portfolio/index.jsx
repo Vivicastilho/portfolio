@@ -17,7 +17,7 @@ export const Portfolio = () => {
           image={Kindle}
           title="Kindle"
           description="Teste realizado para uma empresa com tema tecnologia, criação de e-mail marketing, landing page: mobile e desktop."
-          link="https://www.figma.com/file/5KFsAsoZZFPFRwkwzJzMQy/LeideCakes?node-id=0%3A1&t=QrymOJT5Hj5BOqrc-1"
+          link="https://www.figma.com/file/gjEdGjXwpskPj3PYxvlB9e/TesteTheAlfred?node-id=3-3&t=IvnnZ7xiOt2WXg44-0"
         />
         <Jobs
           image={Cake}
