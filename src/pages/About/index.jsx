@@ -19,7 +19,7 @@ export const About = () => {
           Sou uma entusiasta da leitura e da descoberta de novas culturas. Morei na Irlanda por cinco anos, 
           onde adquiri o nível intermediário de inglês e aprofundei meu conhecimento na cultura local. 
           Estou estudando desenvolvimento web, com habilidades em HTML, CSS, JavaScript e React, 
-          além de possuir conhecimentos em UI/UX Design, Figma e Photoshop Illustrator. Tenho experiência
+          além de possuir conhecimentos em UI/UX Design, Figma, Photoshop e Illustrator. Tenho experiência
           na criação de wireframes, protótipos e designs para aplicações web e mobile, bem como habilidades 
           em resolução de problemas, trabalho em equipe, liderança e comunicação, adquiridas durante minha 
           vivência no exterior. Estou pronta para encarar novos desafios e ampliar meu conhecimento em 
