@@ -16,17 +16,15 @@ export const About = () => {
         <Sobre>
           <h3>Sobre Mim</h3>
           <p>
-            Sou apaixonada por leitura e conhecer novas culturas, vivi na
-            Irlanda por 5 anos, aprendi inglês e muito a respeito da cultura
-            irlandesa. Sou desenvolvedora web em formação com habilidades em
-            HTML, CSS, JavaScript e React, além de UI/UX Design e Figma. Possuo
-            experiência em criação de wireframes, protótipos e designs para
-            aplicações web e mobile. Além disso, tenho experiência em resolução
-            de problemas e trabalho em equipe, bem como habilidades de liderança
-            e comunicação adquiridas durante minha vivência no exterior. Estou
-            pronta para enfrentar novos desafios e expandir meu conhecimento em
-            desenvolvimento web e outras áreas relacionadas bem como UI/UX.
-            Atualmente estou estudando UX design e Metodologia Ágil Scrum.
+          Sou uma entusiasta da leitura e da descoberta de novas culturas. Morei na Irlanda por cinco anos, 
+          onde adquiri o nível intermediário de inglês e aprofundei meu conhecimento na cultura local. 
+          Estou estudando desenvolvimento web, com habilidades em HTML, CSS, JavaScript e React, 
+          além de possuir conhecimentos em UI/UX Design, Figma e Photoshop Illustrator. Tenho experiência
+          na criação de wireframes, protótipos e designs para aplicações web e mobile, bem como habilidades 
+          em resolução de problemas, trabalho em equipe, liderança e comunicação, adquiridas durante minha 
+          vivência no exterior. Estou pronta para encarar novos desafios e ampliar meu conhecimento em 
+          desenvolvimento web, UI/UX e outras áreas relacionadas. Atualmente estou aprofundando meus 
+          conhecimentos em UX design e Metodologia Ágil (Scrum).
           </p>
         </Sobre>
         <h4>Habilidades</h4>
@@ -44,11 +42,15 @@ export const About = () => {
             <li>Design de experiência do usuário</li>
             <li>Design de interfaces</li>
             <li>Desenvolvimento de sites</li>
+            <li>Criação de flyers</li>
+
           </ul>
           <ul>
             <li>Inglês intermediário</li>
             <li>Liderança de equipe</li>
             <li>Landing pages</li>
+            <li>Manipulação de imagens</li>
+
           </ul>
         </Competências>
       </Content>
