@@ -18,9 +18,9 @@ export const Footer = () => {
         <a href="https://www.instagram.com/vivigcastilho/" target="_blank">
           <AiOutlineInstagram />
         </a>
-        <a href="https://github.com/Vivicastilho" target="_blank">
+        {/* <a href="https://github.com/Vivicastilho" target="_blank">
           <AiOutlineGithub />
-        </a>
+        </a> */}
         <a href="https://www.linkedin.com/in/viviane-castilho/" target="_blank">
           <AiOutlineLinkedin />
         </a>
