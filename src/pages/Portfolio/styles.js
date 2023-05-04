@@ -52,6 +52,7 @@ export const Content = styled.div`
     display: inline-block;
     text-align: left;
     margin: 16px auto 0 20px;
+    color: ${({ theme }) => theme.COLORS.DARK300};
   }
   &::after {
     content: "";

@@ -18,11 +18,12 @@ export const About = () => {
           <p>
           Sou uma entusiasta da leitura e da descoberta de novas culturas. Morei na Irlanda por cinco anos, 
           onde adquiri o nível intermediário de inglês e aprofundei meu conhecimento na cultura local. 
-          Estou estudando desenvolvimento web, com habilidades em HTML, CSS, JavaScript e React, 
-          além de possuir conhecimentos em UI/UX Design, Figma, Photoshop e Illustrator. Tenho experiência
-          na criação de wireframes, protótipos e designs para aplicações web e mobile, bem como habilidades 
-          em resolução de problemas, trabalho em equipe, liderança e comunicação, adquiridas durante minha 
-          vivência no exterior. Estou pronta para encarar novos desafios e ampliar meu conhecimento em 
+          Estou estudando desenvolvimento web, com conhecimento em HTML, CSS, JavaScript e React, 
+          além de possuir habilidades em UI/UX Design, Figma, Photoshop e Illustrator. Tenho feito alguns 
+          projetos com pesquisa e mapeamento de usuário, personas, criação de wireframes, protótipos de alta e baixa fidelidade
+          e designs para aplicações web e mobile, bem como habilidades em resolução de problemas, trabalho em equipe, 
+          liderança e comunicação, adquiridas durante minha  vivência no exterior.
+          Estou pronta para encarar novos desafios e ampliar meu conhecimento em 
           desenvolvimento web, UI/UX e outras áreas relacionadas. Atualmente estou aprofundando meus 
           conhecimentos em UX design e Metodologia Ágil (Scrum).
           </p>
@@ -41,7 +42,7 @@ export const About = () => {
           <ul>
             <li>Design de experiência do usuário</li>
             <li>Design de interfaces</li>
-            <li>Desenvolvimento de sites</li>
+            <li>Design de sites</li>
             <li>Criação de flyers</li>
 
           </ul>

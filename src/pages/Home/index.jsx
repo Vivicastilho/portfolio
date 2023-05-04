@@ -24,7 +24,7 @@ export const Home = () => {
           <img src={Portfolio} alt="" />
           <h5>UI/Ux e Web Designer</h5>
           <p>
-            Atuo como freelancer na área de criação de websites em elaboração de
+            Atuo como freelancer na área de UI | UX Design em elaboração de
             protótipos, wireframes e experiência do usuário.
           </p>
         </Title>
@@ -35,9 +35,9 @@ export const Home = () => {
           <a href="https://www.instagram.com/vivigcastilho/" target="_blank">
             <AiOutlineInstagram />
           </a>
-          <a href="https://github.com/Vivicastilho" target="_blank">
+          {/* <a href="https://github.com/Vivicastilho" target="_blank">
             <AiOutlineGithub />
-          </a>
+          </a> */}
           <a
             href="https://www.linkedin.com/in/viviane-castilho/"
             target="_blank"
