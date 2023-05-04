@@ -22,7 +22,7 @@ export const Home = () => {
           <h4>Olá, eu sou</h4>
           <h3>Viviane Castilho</h3>
           <img src={Portfolio} alt="" />
-          <h5>UI/Ux e Web Designer</h5>
+          <h5>UI/Ux Designer</h5>
           <p>
             Atuo como freelancer na área de UI | UX Design em elaboração de
             protótipos, wireframes e experiência do usuário.
