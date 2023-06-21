@@ -11,21 +11,24 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import ptcv from "../../assets/vivianecv.pdf";
-// comment try
+import { langTokens } from "../../Hooks/uselang";
+import { useLang } from "../../useContext";
 
 export const Home = () => {
+  const { lang } = useLang();
+  const { inicio } = langTokens(lang);
+
   return (
     <Container>
       <Nav />
       <Content>
         <Title>
-          <h4>Olá, eu sou</h4>
-          <h3>Viviane Castilho</h3>
+          <h4>{inicio.welcome}</h4>
+          <h3>{inicio.h1}</h3>
           <img src={Portfolio} alt="" />
-          <h5>UI/Ux Designer</h5>
+          <h5>{inicio.h3}</h5>
           <p>
-            Atuo como freelancer na área de UI | UX Design em elaboração de
-            protótipos, wireframes e experiência do usuário.
+          {inicio.contact}
           </p>
         </Title>
         <Social>
@@ -35,9 +38,9 @@ export const Home = () => {
           <a href="https://www.instagram.com/vivigcastilho/" target="_blank">
             <AiOutlineInstagram />
           </a>
-          {/* <a href="https://github.com/Vivicastilho" target="_blank">
+          <a href="https://github.com/Vivicastilho" target="_blank">
             <AiOutlineGithub />
-          </a> */}
+          </a> 
           <a
             href="https://www.linkedin.com/in/viviane-castilho/"
             target="_blank"

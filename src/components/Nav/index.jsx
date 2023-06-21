@@ -1,9 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Container, MobileNav, Navigation } from "./styles";
 
+import { langTokens } from "../../hooks/useLang";
+import { useLang } from "../../useContext";
+
 export const Nav = () => {
-  const [bool, setBool] = useState(false);
+
+  const { lang, setLang } = useLang();
+  const { navBar } = langTokens(lang);
+  const [bool, setBool] = useState(lang == "Pt" ? true : false);
+
+useEffect(()=>{
+bool && setLang("Pt")
+!bool && setLang("En")
+},[bool])
+  
   return (
     <Container>
       <a href="/">
@@ -13,16 +25,16 @@ export const Nav = () => {
       </a>
       <Navigation>
         <NavLink to="/">
-          <li>Início</li>
+          <li>{navBar.home}</li>
         </NavLink>
         <NavLink to="/sobre">
-          <li>Sobre</li>
+          <li>{navBar.about}</li>
         </NavLink>
         <NavLink to="/portfolio">
-          <li>Portfólio</li>
+          <li>{navBar.portfolio}</li>
         </NavLink>
         <a href="mailto:vivianegomes.dev@gmail.com.br" target="_blank">
-          <li>Contato</li>
+          <li>{navBar.contact}</li>
         </a>
       </Navigation>
       <label>

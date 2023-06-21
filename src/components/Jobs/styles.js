@@ -25,6 +25,8 @@ export const Container = styled.div`
     font-family: ${({ theme }) => theme.FONTS[0]};
   }
   img {
+    width: 200px;
+    height: 200px;
     margin-right: 35px;
   }
 `;

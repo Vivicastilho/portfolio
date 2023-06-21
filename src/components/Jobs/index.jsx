@@ -4,8 +4,8 @@ import { Container } from "./styles";
 export const Jobs = ({ image, title, description, link }) => {
   return (
     <Container>
-      <a href={link}>
-        <img src={image} target="_blank" />
+      <a href={link} target="_blank">
+        <img src={image}  />
       </a>
       <div>
         <a href={link} target="_blank">
