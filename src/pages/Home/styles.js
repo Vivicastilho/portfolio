@@ -63,7 +63,8 @@ export const Content = styled.div`
     border-radius: 20px 0px 0px 20px;
     padding-left: min(17vw, 270px);
     align-items: flex-start;
-    height: 600px;
+  max-width: 1200px;
+
 
     button {
       margin-left: 0;
@@ -163,7 +164,7 @@ export const Title = styled.div`
     }
     p {
       margin-top: 40px;
-
+      width: clamp(200px, 35vw, 600px);
       margin-left: 0;
     }
     img {

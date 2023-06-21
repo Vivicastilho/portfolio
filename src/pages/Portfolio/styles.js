@@ -20,6 +20,7 @@ export const Container = styled.div`
   }
 `;
 
+
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
@@ -30,8 +31,8 @@ export const Content = styled.div`
   margin: 20px auto;
   padding-bottom: 120px;
   gap: 20px;
-
   position: relative;
+
 
   h4,
   h1 {
@@ -64,9 +65,12 @@ export const Content = styled.div`
     background-image: url(${dot});
   }
   @media (min-width: 1200px) {
-    height: 600px;
+    height: fit-content;
+    flex-direction: row;
+    width: 1200px;
+    flex-wrap: wrap;
     margin: 180px auto;
-    padding: 0;
+    padding:50px 0;
     h1 {
       display: inline-block;
     }
@@ -90,3 +94,5 @@ export const Content = styled.div`
     }
   }
 `;
+
+
