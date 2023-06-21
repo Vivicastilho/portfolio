@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Container, MobileNav, Navigation } from "./styles";
 
-import { langTokens } from "../../hooks/useLang";
+import { langTokens} from "../../Hooks/uselang"
 import { useLang } from "../../useContext";
 
 export const Nav = () => {
