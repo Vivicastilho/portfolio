@@ -12,7 +12,6 @@ import {
 } from "react-icons/ai";
 import ptcv from "../../assets/vivianecv.pdf";
 import { useLang } from "../../useContext";
-import { langTokens } from "../../hooks/useLang";
 
 export const Home = () => {
   const { lang } = useLang();
