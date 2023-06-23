@@ -9,8 +9,8 @@ import Kindle from "../../assets/Kindle.jpg";
 import Pizzaria from "../../assets/DiToscana.png";
 import ViPortifolio from "../../assets/ViPortfolio.png";
 import AlePortifolio from "../../assets/AlePortfolio.png";
-import { langTokens } from "../../hooks/useLang";
 import { useLang } from "../../useContext";
+import { langTokens } from "../../hooks/useLang";
 
 export const Portfolio = () => {
   const { lang } = useLang();
