@@ -6,6 +6,7 @@ import Image from "../../assets/viviirlanda.jpg";
 import { Footer } from "../../components/Footer";
 import { Nav } from "../../components/Nav";
 import { useLang } from "../../useContext";
+import {langTokens} from "../../hooks/uselang.js"
 import { Competências, Container, Content, Habilidades, Sobre } from "./styles";
 
 export const About = () => {

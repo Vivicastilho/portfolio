@@ -10,6 +10,7 @@ import ptcv from "../../assets/vivianecv.pdf";
 import { Footer } from "../../components/Footer";
 import { Nav } from "../../components/Nav";
 import { useLang } from "../../useContext";
+import {langTokens} from "../../hooks/uselang.js"
 import { Container, Content, Social, Title } from "./styles";
 
 export const Home = () => {
