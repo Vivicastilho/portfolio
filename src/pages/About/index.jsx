@@ -1,13 +1,12 @@
 import React from "react";
-import { DiPhotoshop } from "react-icons/di";
+import { DiIllustrator, DiPhotoshop } from "react-icons/di";
 import { FaCss3Alt, FaFigma, FaHtml5, FaReact } from "react-icons/fa";
-import {DiIllustrator} from "react-icons/di"
 import { IoLogoJavascript } from "react-icons/io";
+import Image from "../../assets/viviirlanda.jpg";
 import { Footer } from "../../components/Footer";
 import { Nav } from "../../components/Nav";
-import { Competências, Container, Content, Habilidades, Sobre } from "./styles";
-import Image from "../../assets/viviirlanda.jpg";
 import { useLang } from "../../useContext";
+import { Competências, Container, Content, Habilidades, Sobre } from "./styles";
 
 export const About = () => {
   const { lang } = useLang();

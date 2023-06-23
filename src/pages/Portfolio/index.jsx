@@ -1,15 +1,15 @@
 import React from "react";
+import AlePortifolio from "../../assets/AlePortfolio.png";
+import Cake from "../../assets/DeliciousCake.jpg";
+import Pizzaria from "../../assets/DiToscana.png";
+import Kindle from "../../assets/Kindle.jpg";
+import Notes from "../../assets/SimpleNotes.jpg";
+import ViPortifolio from "../../assets/ViPortfolio.png";
 import { Footer } from "../../components/Footer";
 import { Jobs } from "../../components/Jobs";
 import { Nav } from "../../components/Nav";
-import { Container, Content } from "./styles";
-import Cake from "../../assets/DeliciousCake.jpg";
-import Notes from "../../assets/SimpleNotes.jpg";
-import Kindle from "../../assets/Kindle.jpg";
-import Pizzaria from "../../assets/DiToscana.png";
-import ViPortifolio from "../../assets/ViPortfolio.png";
-import AlePortifolio from "../../assets/AlePortfolio.png";
 import { useLang } from "../../useContext";
+import { Container, Content } from "./styles";
 
 export const Portfolio = () => {
   const { lang } = useLang();

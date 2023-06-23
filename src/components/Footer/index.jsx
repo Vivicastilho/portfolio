@@ -1,12 +1,11 @@
 import React from "react";
-import { Container, Social } from "./styles";
 import {
-  AiOutlineInstagram,
-  AiOutlineGithub,
   AiOutlineBehanceSquare,
+  AiOutlineInstagram,
   AiOutlineLinkedin,
-  AiOutlineMail,
+  AiOutlineMail
 } from "react-icons/ai";
+import { Container, Social } from "./styles";
 
 export const Footer = () => {
   return (

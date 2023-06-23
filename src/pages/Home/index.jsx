@@ -1,17 +1,16 @@
-import { useState } from "react";
-import { Footer } from "../../components/Footer";
-import { Nav } from "../../components/Nav";
-import { Container, Content, Social, Title } from "./styles";
-import Portfolio from "../../assets/Portfolio.png";
 import {
-  AiOutlineInstagram,
-  AiOutlineGithub,
   AiOutlineBehanceSquare,
+  AiOutlineGithub,
+  AiOutlineInstagram,
   AiOutlineLinkedin,
   AiOutlineMail,
 } from "react-icons/ai";
+import Portfolio from "../../assets/Portfolio.png";
 import ptcv from "../../assets/vivianecv.pdf";
+import { Footer } from "../../components/Footer";
+import { Nav } from "../../components/Nav";
 import { useLang } from "../../useContext";
+import { Container, Content, Social, Title } from "./styles";
 
 export const Home = () => {
   const { lang } = useLang();
