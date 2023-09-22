@@ -88,7 +88,7 @@ export const langTokens = (mode) =>
         },
         trabalhos: {
           CaseMera: ["Projeto de UI/UX.", "Aplicativo criado em grupo pela Escola Coder House para monitorar o consumo de energia, sendo realizado UX Research, Guia de Prioridades,  Userflow, Protótipos e Teste de Usabilidade."],
-          DiToscana: ["Di Toscana Pizzaria","Em andamento.... Site está sendo desenvolvido no Figma para uma pizzaria em Caldas Novas - Goiás."],
+          DiToscana: ["Di Toscana Pizzaria"," Site criado no Figma para uma pizzaria em Caldas Novas - Goiás."],
           Cakes: ["Delicious Cake","Criação feita com a ferramenta Figma para uma confeitaria artesanal, web e mobile."],
           Kindle: ["Kindle","Projeto Teste de UI design desenvolvido para uma empresa com o tema tecnologia. Landing Page, E-mail Marketing e Mobile. "],
           // SimpleNotes: ["Simple Notes","Criação feita com a ferramenta Figma pelo curso do Rodrigo Gonçalves, web."],
