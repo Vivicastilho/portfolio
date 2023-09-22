@@ -1,8 +1,8 @@
 import React from "react";
-// import AlePortifolio from "../../assets/AlePortfolio.png";
 import Cake from "../../assets/DeliciousCake.jpg";
 import Pizzaria from "../../assets/DiToscana.png";
 import Kindle from "../../assets/Kindle.jpg";
+// import AlePortifolio from "../../assets/AlePortfolio.png";
 // import Notes from "../../assets/SimpleNotes.jpg";
 // import ViPortifolio from "../../assets/ViPortfolio.png";
 import CaseMera from "../../assets/CaseMera.png";
@@ -27,7 +27,6 @@ export const Portfolio = () => {
         <Jobs
           image={CaseMera}
           title={trabalhos.CaseMera[0]}
-
           description={trabalhos.CaseMera[1]}
           link="https://www.behance.net/gallery/178787583/Aplicativo-de-Monitoramento"
         />
